@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Favorite Voting</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <div class="logo-area">
+
+            <div class="logo-icon">
+                🎓
+            </div>
+
+            <div>
+                <h2>UniVote</h2>
+                <p>Student Poll</p>
+            </div>
+
+        </div>
+
+        <div class="header-badge">
+            🗳 Live Voting
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <span class="hero-label">
+                🎓 UNIVERSITY POLL
+            </span>
+
+            <h1>
+                Which University Is Your
+                <span>Favorite?</span>
+            </h1>
+
+            <p>
+                Choose one university that you would most like
+                to study at in the future.
+            </p>
+
+        </section>
+
+
+        <!-- ================= VOTING CARDS ================= -->
+
+        <section class="voting-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="small-title">
+                        YOUR CHOICE
+                    </span>
+
+                    <h2>
+                        Choose Your University
+                    </h2>
+                </div>
+
+                <span class="choice-info">
+                    4 Universities
+                </span>
+
+            </div>
+
+
+            <!-- ================= UNIVERSITY GRID ================= -->
+
+            <div class="university-grid">
+            
+
+
+                <!-- ================= UIM ================= -->
+
+                <article class="university-card uim-card">
+
+                    <div class="card-top">
+
+                        <span class="rank">
+                            01
+                        </span>
+
+                        <span class="country">
+                            🇸🇦 Saudi Arabia
+                        </span>
+
+                    </div>
+
+
+                    <div class="university-logo">
+
+                        <img
+                            src="https://muadzbinjabal.com/wp-content/uploads/2025/07/logo-universitas-islam-madinah-9.png"
+                            alt="Universitas Islam Madinah"
+                        >
+
+                    </div>
+
+
+                    <div class="university-info">
+
+                        <h3>
+                            Universitas Islam Madinah
+                        </h3>
+
+                        <p class="short-name">
+                            Islamic University of Madinah
+                        </p>
+
+
+                        <div class="vote-info">
+
+                            <div>
+
+                                <span class="vote-label">
+                                    Votes
+                                </span>
+
+                                <strong id="uimVotes">
+                                    0
+                                </strong>
+
+                            </div>
+
+                            <span class="vote-icon">
+                                🗳
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                id="uimProgress"
+                            ></div>
+
+                        </div>
+
+
+                        <button
+                            class="vote-btn"
+                            id="uimBtn"
+                            data-candidate="uim"
+                        >
+                            Vote for UIM
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= UGM ================= -->
+
+                <article class="university-card ugm-card">
+
+                    <div class="card-top">
+
+                        <span class="rank">
+                            02
+                        </span>
+
+                        <span class="country">
+                            🇮🇩 Indonesia
+                        </span>
+
+                    </div>
+
+
+                    <div class="university-logo">
+
+                        <img
+                            src="https://i.pinimg.com/1200x/dd/f1/99/ddf19990e9c6d2ccb4b1f345d61ea6c6.jpg"
+                            alt="Universitas Gadjah Mada"
+                        >
+
+                    </div>
+
+
+                    <div class="university-info">
+
+                        <h3>
+                            Universitas Gadjah Mada
+                        </h3>
+
+                        <p class="short-name">
+                            Gadjah Mada University
+                        </p>
+
+
+                        <div class="vote-info">
+
+                            <div>
+
+                                <span class="vote-label">
+                                    Votes
+                                </span>
+
+                                <strong id="ugmVotes">
+                                    0
+                                </strong>
+
+                            </div>
+
+                            <span class="vote-icon">
+                                🗳
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                id="ugmProgress"
+                            ></div>
+
+                        </div>
+
+
+                        <button
+                            class="vote-btn"
+                            id="ugmBtn"
+                            data-candidate="ugm"
+                        >
+                            Vote for UGM
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= OXFORD ================= -->
+
+                <article class="university-card oxford-card">
+
+                    <div class="card-top">
+
+                        <span class="rank">
+                            03
+                        </span>
+
+                        <span class="country">
+                            🇬🇧 United Kingdom
+                        </span>
+
+                    </div>
+
+
+                    <div class="university-logo">
+
+                        <img
+                            src="https://media.licdn.com/dms/image/v2/D4E22AQHZAQICiAtaeA/feedshare-shrink_800/feedshare-shrink_800/0/1720024346563?e=2147483647&v=beta&t=AKfGmqJuImXcUEVevBExClPWZjovQMovrG_R5xwma0Y"
+                            alt="University of Oxford"
+                        >
+
+                    </div>
+
+
+                    <div class="university-info">
+
+                        <h3>
+                            University of Oxford
+                        </h3>
+
+                        <p class="short-name">
+                            Oxford University
+                        </p>
+
+
+                        <div class="vote-info">
+
+                            <div>
+
+                                <span class="vote-label">
+                                    Votes
+                                </span>
+
+                                <strong id="oxfordVotes">
+                                    0
+                                </strong>
+
+                            </div>
+
+                            <span class="vote-icon">
+                                🗳
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                id="oxfordProgress"
+                            ></div>
+
+                        </div>
+
+
+                        <button
+                            class="vote-btn"
+                            id="oxfordBtn"
+                            data-candidate="oxford"
+                        >
+                            Vote for Oxford
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= HARVARD ================= -->
+
+                <article class="university-card harvard-card">
+
+                    <div class="card-top">
+
+                        <span class="rank">
+                            04
+                        </span>
+
+                        <span class="country">
+                            🇺🇸 United States
+                        </span>
+
+                    </div>
+
+
+                    <div class="university-logo">
+
+                        <img
+                            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/1280px-Harvard_University_shield.png"
+                            alt="Harvard University"
+                        >
+
+                    </div>
+
+
+                    <div class="university-info">
+
+                        <h3>
+                            Harvard University
+                        </h3>
+
+                        <p class="short-name">
+                            Harvard University
+                        </p>
+
+
+                        <div class="vote-info">
+
+                            <div>
+
+                                <span class="vote-label">
+                                    Votes
+                                </span>
+
+                                <strong id="harvardVotes">
+                                    0
+                                </strong>
+
+                            </div>
+
+                            <span class="vote-icon">
+                                🗳
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                id="harvardProgress"
+                            ></div>
+
+                        </div>
+
+
+                        <button
+                            class="vote-btn"
+                            id="harvardBtn"
+                            data-candidate="harvard"
+                        >
+                            Vote for Harvard
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESULT ================= -->
+
+        <section class="result-section">
+
+            <div class="result-header">
+
+                <div>
+
+                    <span class="small-title">
+                        LIVE RESULT
+                    </span>
+
+                    <h2>
+                        Current Voting Result
+                    </h2>
+
+                </div>
+
+
+                <div class="total-box">
+
+                    <span>
+                        Total Votes
+                    </span>
+
+                    <strong id="totalVotes">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= WINNER ================= -->
+
+            <div class="winner-box">
+
+                <div class="winner-icon">
+                    🏆
+                </div>
+
+
+                <div class="winner-content">
+
+                    <span>
+                        Current Winner
+                    </span>
+
+                    <h3 id="winnerName">
+                        No votes yet
+                    </h3>
+
+                    <p>
+                        <strong id="winnerVotes">
+                            0
+                        </strong>
+                        votes
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FEEDBACK ================= -->
+
+            <div
+                class="feedback"
+                id="feedback"
+            >
+                👆 Choose your favorite university above!
+            </div>
+
+
+            <!-- ================= RESET BUTTON ================= -->
+
+            <button
+                class="reset-btn"
+                id="resetBtn"
+            >
+                🔄 Reset Voting
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            UniVote © 2026 | @_abdullahnh { +62-85729670353 } 
+        </p>
+
+        <span>
+            Built with HTML • CSS • JavaScript
+        </span>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
+
