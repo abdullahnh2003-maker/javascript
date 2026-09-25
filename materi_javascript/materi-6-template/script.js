@@ -5,6 +5,22 @@ const productGrid = document.getElementById('product-grid');
 const loadingState = document.getElementById('loading-state');
 const resultSummary = document.getElementById('result-summary');
 const categorySelect = document.getElementById('category-select');
+const sortSelect = document.getElementById('sort-select')
+const searchInput = document.getElementById('search-input')
+const resetBtn = document.getElementById('reset-btn')
+const reload = document.getElementById('reload-data')
+
+reload.addEventListener('click', () => {
+  window.location.reload(); // reload ulang halaman
+});
+
+resetBtn.addEventListener('click', () => {
+  // mengamblkan semua state dr filter yg ada
+  searchInput.value = ''; // pencarian teks dikosaongkan
+  categorySelect.value = 'all'; // kategori di set ke all
+  sortSelect.value = 'default'; // sort di set ke default
+  getProducts(); // panggil ulang get produk api
+})
 
 function renderProduct(dataProducts) {
     productGrid.innerHTML = ''; // reset isi product grid
